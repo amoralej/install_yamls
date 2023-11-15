@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metallb-operator-controller-manager
+  namespace: openshift-operators
+spec:
+  template:
+    spec:
+      containers:
+      - name: manager
+        env:
+        - name: DEPLOY_SERVICEMONITORS
+          value: "true"
+        - name: METALLB_BGP_TYPE
+          value: "frr"
