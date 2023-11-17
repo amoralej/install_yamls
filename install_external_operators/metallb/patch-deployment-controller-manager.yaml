@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: metallb-operator-controller-manager
-  namespace: openshift-operators
+  namespace: metallb-system
 spec:
   template:
     spec:

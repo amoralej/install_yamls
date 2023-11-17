@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: metallb-operator-webhook-server
-  namespace: openshift-operators
+  namespace: metallb-system
 spec:
   template:
     spec:
