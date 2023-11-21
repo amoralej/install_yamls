@@ -13,3 +13,6 @@ spec:
           value: "true"
         - name: METALLB_BGP_TYPE
           value: "frr"
+        - name: FRR_IMAGE
+          value: quay.io/frrouting/frr:8.4.2
+
